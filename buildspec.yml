@@ -16,7 +16,3 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn -s settings.xml package
-artifacts:
-  files:
-    - target/web-app.war
-  discard-paths: no
