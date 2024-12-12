@@ -19,4 +19,4 @@ phases:
 artifacts:
   files:
     - target/web-app.war
-  discard-paths: no
+  discard-paths: yes
