@@ -1,0 +1,35 @@
+<settings>
+
+<servers>
+  <server>
+    <id>dev-ops-dev-ops-packages</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>dev-ops-dev-ops-packages</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>dev-ops-dev-ops-packages</id>
+        <url>https://dev-ops-891376964321.d.codeartifact.us-east-1.amazonaws.com/maven/dev-ops-packages/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>dev-ops-dev-ops-packages</id>
+    <name>dev-ops-dev-ops-packages</name>
+    <url>https://dev-ops-891376964321.d.codeartifact.us-east-1.amazonaws.com/maven/dev-ops-packages/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>
